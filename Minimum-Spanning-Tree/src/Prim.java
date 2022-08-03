@@ -8,7 +8,7 @@ public class Prim {
         // 以基准点V0起点 初始化v0到各点位距离
         int[] vWeight = Arrays.copyOf(g[0], g.length);
 
-        // 初始化各起点位置均为0标
+        // 初始化格起点位置均为0标
         int[] adjVex = new int[g.length];
 
         /**
@@ -17,7 +17,7 @@ public class Prim {
          *  2） while循环 ：定义布尔数组，找到后改状态直到状态全部成功
          */
         for (int v = 1; v < g.length; v++) {
-            // 找到 当前最短路径 与 最短路径下标点
+            // 找到当前最短路径与最短路径下标点
             int min = Integer.MAX_VALUE, minPoint = 0;
             for (int i = 1; i < vWeight.length; i++) {
                 // 0 说明已找到无需重复
