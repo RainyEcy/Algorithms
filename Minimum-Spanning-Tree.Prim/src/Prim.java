@@ -3,6 +3,9 @@ import java.util.Arrays;
 public class Prim {
     /**
      * 最小生成树-Prim普里姆算法
+     *
+     * @param g 基于二维数组的图
+     * @return 数组 值：开始点的映射 下标：结束点的映射
      */
     public static int[] prim(int[][] g) {
         // 以基准点V0起点 初始化v0到各点位距离
